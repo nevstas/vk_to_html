@@ -58,13 +58,14 @@ if ($total == 1) {
     if ($page2 != $total) $nextpage = '<li class="page-item"><a class="page-link" href="./index.php?page=' . ($page2 + 1) . '">></a></li>
             <li class="page-item"><a class="page-link" href="./index.php?page=' . $total . '">>></a></li>';
     // Находим две ближайшие станицы с обоих краев, если они есть
-    if($page2 - 2 > 0) $page2left = '<li class="page-item"><a class="page-link" href="./index.php?page=' . ($page2 - 2) . '">' . ($page2 - 2) . '</a></li>';
+//    if($page2 - 2 > 0) $page2left = '<li class="page-item"><a class="page-link" href="./index.php?page=' . ($page2 - 2) . '">' . ($page2 - 2) . '</a></li>';
     if($page2 - 1 > 0) $page1left = '<li class="page-item"><a class="page-link" href="./index.php?page=' . ($page2 - 1) . '">' . ($page2 - 1) . '</a></li>';
-    if($page2 + 2 <= $total) $page2right = '<li class="page-item"><a class="page-link" href="./index.php?page=' . ($page2 + 2) . '">' . ($page2 + 2) . '</a></li>';
+//    if($page2 + 2 <= $total) $page2right = '<li class="page-item"><a class="page-link" href="./index.php?page=' . ($page2 + 2) . '">' . ($page2 + 2) . '</a></li>';
     if($page2 + 1 <= $total) $page1right = '<li class="page-item"><a class="page-link" href="./index.php?page=' . ($page2 + 1) . '">' . ($page2 + 1) . '</a></li>';
     if($posts) $activepage = '<li class="page-item active"><a class="page-link" href="#">' . $page2 . '</a></li>';
     // Вывод меню
-    $pagenav = $pervpage . $page2left . $page1left . $activepage . $page1right . $page2right . $nextpage;
+//    $pagenav = $pervpage . $page2left . $page1left . $activepage . $page1right . $page2right . $nextpage;
+    $pagenav = $pervpage . $page1left . $activepage . $page1right . $nextpage;
 }
 
 $posts = array_slice($posts_all['channel']['item'], $start, $num);
