@@ -121,7 +121,7 @@ function xml2array ( $xmlObject, $out = array () )
                     <button class="btn btn-primary mb-4" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample<?=$i?>" aria-expanded="false" aria-controls="collapseExample<?=$i?>">
                         Читать
                     </button>
-                    <p class="card-text collapse" id="collapseExample<?=$i?>"><?=$post->description?></p>
+                    <div class="card-text collapse" id="collapseExample<?=$i?>"><?=$post->description?></div>
                 </div>
             </div>
             <?php $i++; ?>
