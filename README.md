@@ -59,5 +59,5 @@ https://nevep.ru/tmp/vk_to_html/xml_to_html/ \
 * В папке "xml_to_html_without_php/result" Будет результат. В папке "xml_to_html_without_php/result/pages" будут страницы. Для запуска открыть файл "xml_to_html_without_php/result/pages/page_1.html"
 
 Пример результата парсинга (без PHP):\
-https://nevep.ru/tmp/vk_to_html/xml_to_html_new_without_php/ \
+https://nevep.ru/tmp/vk_to_html/xml_to_html_new_without_php/result/pages/page_1.html \
 
